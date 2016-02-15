@@ -21,6 +21,7 @@ function searchMovie() {
     url: url,
   }).done(function(data) {
     console.log(data);
+    $('#result').show();
     $('#poster').attr('src', data["Poster"]);
     $('#title').text(data["Title"]);
     $('#imdbRating').text(data["imdbRating"]);
